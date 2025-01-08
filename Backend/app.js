@@ -1,7 +1,8 @@
 import Database from "better-sqlite3";
-// import { contacts } from "./contactData.js";
+import { contacts } from "./contactData.js";
 import axios from "axios";
 import fs from "fs";
+import falso from "@ngneat/falso";
 
 const db = new Database("contacts.db");
 
@@ -40,7 +41,7 @@ async function generateContacts() {
 
     // Write all contact data to a json file
     fs.writeFileSync("contacts.json", JSON.stringify(contacts, null, 2));
-    console.log("Generated 100,000 contacts");
+    console.log("Generated 20,000 contacts");
 }
 
 generateContacts();
