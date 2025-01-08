@@ -12,6 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@faker-js/faker": "^9.3.0",
         "@ngneat/falso": "^7.3.0",
         "axios": "^1.7.9",
         "better-sqlite3": "^11.7.2",
