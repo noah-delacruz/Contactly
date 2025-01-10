@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "start": "node app.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon app.js"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +17,8 @@
         "@ngneat/falso": "^7.3.0",
         "axios": "^1.7.9",
         "better-sqlite3": "^11.7.2",
-        "fs": "^0.0.1-security"
+        "express": "^4.21.2",
+        "fs": "^0.0.1-security",
+        "nodemon": "^3.1.9"
     }
 }

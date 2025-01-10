@@ -13,6 +13,29 @@ const query = `
 db.exec(query);
 */
 
+/* INSERT DATA INTO TABLE
+-------------------------------------------------------
+const insertDataQuery = db.prepare(
+    "INSERT INTO contacts (first_name, last_name, zip_code, date_of_birth) VALUES (?, ?, ?, ?)"
+);
+
+contacts.forEach((contact) => {
+    insertDataQuery.run(
+        contact.first_name,
+        contact.last_name,
+        contact.zip_code,
+        contact.date_of_birth
+    );
+});
+*/
+
+/* RETRIEVE DATA FROM TABLE
+-------------------------------------------------------
+const query = "SELECT * FROM contacts";
+const users = db.prepare(query).all(); // Returns array of objects to return for express API endpoints
+console.log(users);
+*/
+
 /*
 // Helper function to validate English alphabet names and 5-digit zip codes
 const isValidContact = (contact) => {
@@ -53,20 +76,4 @@ const contacts = generateContacts(20000);
 fs.writeFileSync("contacts.json", JSON.stringify(contacts, null, 2));
 
 console.log("Generated 20,000 valid contacts!");
-*/
-
-/* INSERT DATA INTO TABLE
--------------------------------------------------------
-const insertDataQuery = db.prepare(
-    "INSERT INTO contacts (first_name, last_name, zip_code, date_of_birth) VALUES (?, ?, ?, ?)"
-);
-
-contacts.forEach((contact) => {
-    insertDataQuery.run(
-        contact.first_name,
-        contact.last_name,
-        contact.zip_code,
-        contact.date_of_birth
-    );
-});
 */
