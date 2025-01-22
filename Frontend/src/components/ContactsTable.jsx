@@ -13,6 +13,7 @@ import {
 
 export default function ContactsTable() {
     const [contacts, setContacts] = useState([]);
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/";
 
     const columns = [
         {
@@ -51,9 +52,7 @@ export default function ContactsTable() {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await axios.get(
-                    "http://localhost:3000/api/v1/contacts"
-                );
+                const response = await axios.get(`${API_URL}/api/v1/contacts`);
                 setContacts(response.data);
             } catch (error) {
                 console.error("Error fetching contacts: ", error);
