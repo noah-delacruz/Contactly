@@ -1,8 +1,8 @@
-# HoopIntel - Contact Management App
+# Contactly - Contact Management App
 
 ## 📌 Overview
 
-HoopIntel is a full-stack application that manages a large dataset of **20,000 contacts** stored in an SQLite database. It supports **sorting, pagination, and updating records** efficiently. This project was built to explore full-stack engineering concepts.
+Contactly is a full-stack application that manages a large dataset of **20,000 contacts** stored in an SQLite database. It supports **sorting, pagination, and updating records** efficiently. This project was built to explore full-stack engineering concepts.
 
 ## 🛠 Tech Stack
 
@@ -17,8 +17,8 @@ HoopIntel is a full-stack application that manages a large dataset of **20,000 c
 1. **Clone the repository**
 
     ```sh
-    git clone https://github.com/yourusername/hoopintel.git
-    cd hoopintel
+    git clone https://github.com/noah-delacruz/Contactly
+    cd Contactly
     ```
 
 2. **Backend Setup**
