@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { DataGrid } from "@mui/x-data-grid";
 import Paper from "@mui/material/Paper";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import {
     Table,
     TableBody,
@@ -77,6 +78,10 @@ export default function ContactsTable() {
     return (
         <>
             <h1>Contactly</h1>
+
+            <a href="https://github.com/noah-delacruz/Contactly">
+                <GitHubIcon></GitHubIcon>
+            </a>
             <Paper sx={{ width: "100%" }}>
                 <DataGrid
                     editMode="row"
