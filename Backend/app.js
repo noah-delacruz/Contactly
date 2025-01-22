@@ -12,7 +12,9 @@ const db = new Database("contacts.db");
 
 app.get("/api/v1/contacts", (req, res) => {
     try {
-        const query = "SELECT * FROM contacts";
+        const sortField = req.query.sort || "ID";
+        const sortOrder = req.query.order || "asc";
+        const query = `SELECT * FROM contacts ORDER BY ${sortField} ${sortOrder}`;
         const users = db.prepare(query).all(); // Returns array of objects to return for express API endpoints
         res.json(users);
     } catch (error) {
